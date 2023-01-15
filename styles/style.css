@@ -287,7 +287,7 @@ img{
 
     .primary-heading{
         font-size: 35px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     /* Header Responsive Style */
     .nav{
@@ -387,15 +387,24 @@ img{
         gap: 10px;
     }
 
+    .blog-posts-container:last-child{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
     /* facts section responsive */
     .facts-container{
         text-align: center;
-        padding: 20px 5px;
+        padding: 20px 10px;
     }
 
     .facts-item-container{
         flex-direction: column;
         gap: 10px;
+    }
+
+    .facts-item img{
+        width: 20%;
     }
 
     /* Sponsors Section Responsive Styles */
