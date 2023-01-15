@@ -14,9 +14,14 @@ a{
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 .text-primary{
     color: #727272;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .primary-heading{
@@ -40,8 +45,8 @@ a{
 
 .nav{
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: 20px 150px;
 }
 
 .nav>.brand-name{
@@ -62,13 +67,12 @@ a{
 }
 
 /* Site Info & Banner Styles */
-
 .site-info-container{
     display: flex;
     flex-flow:column wrap;
     justify-content: center;  
     row-gap: 50px;
-    padding:  80px 135px 50px 135px;
+    padding:  80px 150px 50px 150px;
 }
 
 .site-info{
@@ -83,14 +87,46 @@ a{
     margin-bottom: 15px;
 }
 
-.site-info > .site-details{
+
+/* Main Area Styles */
+
+/* Team & Quick List Features Section Style */
+
+.team-info-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 60px 200px 100px 200px;
+}
+
+.gallery-container, .quick-list-item{
+    flex: 1;
+}
+
+.gallery-container{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+
+.quick-list-item{
+    margin-top: 160px;
+}
+
+.quick-list-item > .quick-list-title{
+    font-weight: 700px;
+    font-size: 45px;
     margin-bottom: 20px;
 }
 
-.site-info-container > .banner img{
-    width: 100%;
+.quick-list-title .quick-list-text{
+    font-weight: 500;
+    color: #727272;
 }
 
+.quick-list-title .features-text{
+    color: #FF900E;
+}
 
 
 
@@ -101,11 +137,19 @@ a{
         padding: 10px;
         font-size: 18px;
     }
+
+    .text-primary{
+        margin-bottom: 10px;
+    }
     /* Header Responsive Style */
     .nav{
         flex-flow: column wrap;
         text-align: center; 
         padding: 0;
+    }
+
+    .nav .brand-name{
+        margin-top: 10px;
     }
 
     .menu-container{
@@ -115,27 +159,49 @@ a{
     .menu-container a { 
         padding: 10px;
         border-top: 1px solid rgba(83, 75, 75, 0.3); 
-      }
+    }
 
-      .menu-container li:first-child a{
+    .menu-container li:first-child a{
         border-top: none; 
-      }
+    }
 
-      /* Site info & Banner Responsive */
-      .site-info-container{
+    /* Site info & Banner Responsive */
+    .site-info-container{
         row-gap: 15px;
         padding: 25px 10px;
-      }
+    }
+    
+    .site-info{
+        width: 100%;
+    }
 
-      .site-info> .site-heading{
+    .site-info> .site-heading{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    /* Main Area Responsive Styles */
+
+    /* Team & Quick List Features Section Styles */
+    .team-info-container{
+        flex-direction: column;
+        gap:10px;
+        padding: 20px 10px;
+    }
+
+    .gallery-container{
+        gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-list-item{
+        margin-top: 15px;
+        text-align: center;
+    }        
+
+    .quick-list-item > .quick-list-title{
         font-size: 30px;
         margin-bottom: 10px;
-      }
-
-      .site-info > .site-details{
-        margin-bottom: 10px;
-        text-align: justify;
-      }
-
-
     }
+        
+}
