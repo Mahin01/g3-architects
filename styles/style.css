@@ -218,6 +218,25 @@ img{
     font-size: 20px;
 }
 
+/* Sponsors Section Styles */
+
+.sponsors .sponsors-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 150px;
+}
+
+.sponsors .sponsors-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sponsors-item .sponsor-img{
+    filter: grayscale(100%);
+}
+
 
 
 /* Responsive Layout Styles */
@@ -334,5 +353,15 @@ img{
         flex-direction: column;
         gap: 10px;
     }
+
+    /* Sponsors Section Responsive Styles */
+    .sponsors .sponsors-details{
+        padding: 20px;
+    }
+    .sponsors .sponsors-container{
+        flex-direction: column;
+    }
+
+
         
 }
