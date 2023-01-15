@@ -14,6 +14,25 @@ a{
     text-decoration: none;
 }
 
+.text-primary{
+    color: #727272;
+    font-size: 16px;
+}
+
+.primary-heading{
+
+}
+
+.btn-primary{
+    background: #FF900E;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
 /* header part style */
 .header{
     background-color: #FFF4E7;
@@ -42,9 +61,46 @@ a{
     padding: 15px 20px;
 }
 
+/* Site Info & Banner Styles */
+
+.site-info-container{
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;  
+    row-gap: 50px;
+    padding:  80px 135px 50px 135px;
+}
+
+.site-info{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-info> .site-heading{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.site-info > .site-details{
+    margin-bottom: 20px;
+}
+
+.site-info-container > .banner img{
+    width: 100%;
+}
+
+
+
 
 /* Responsive Layout Styles */
 @media screen and (max-width:576px) {
+    /* Universal style responsive */
+    .btn-primary{
+        padding: 10px;
+        font-size: 18px;
+    }
     /* Header Responsive Style */
     .nav{
         flex-flow: column wrap;
@@ -64,4 +120,22 @@ a{
       .menu-container li:first-child a{
         border-top: none; 
       }
-}
+
+      /* Site info & Banner Responsive */
+      .site-info-container{
+        row-gap: 15px;
+        padding: 25px 10px;
+      }
+
+      .site-info> .site-heading{
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      .site-info > .site-details{
+        margin-bottom: 10px;
+        text-align: justify;
+      }
+
+
+    }
