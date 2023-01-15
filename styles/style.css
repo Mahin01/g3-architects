@@ -25,7 +25,10 @@ img{
 }
 
 .primary-heading{
-
+    font-weight: 700px;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #131313;
 }
 
 .btn-primary{
@@ -87,6 +90,10 @@ img{
     margin-bottom: 15px;
 }
 
+.site-heading .heading-block-text{
+    display: block;
+}
+
 
 /* Main Area Styles */
 
@@ -113,12 +120,6 @@ img{
     margin-top: 160px;
 }
 
-.quick-list-item > .quick-list-title{
-    font-weight: 700px;
-    font-size: 45px;
-    margin-bottom: 20px;
-}
-
 .quick-list-title .quick-list-text{
     font-weight: 500;
     color: #727272;
@@ -126,6 +127,59 @@ img{
 
 .quick-list-title .features-text{
     color: #FF900E;
+}
+
+/* Feature Section Styles */
+
+/* .features{
+     position: relative; 
+} */
+
+.feature-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding:  50px 150px;
+}
+
+.features-item{
+    flex: 1;
+}
+
+.features-item .services-container{
+    background: #f9f9f9;
+}
+
+.services-container .services{
+    background: #ffffff;
+    padding: 20px;
+}
+
+.services .sub-heading{
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+
+.features .feature-btn-relative{
+    text-align: center;
+}
+
+.features .feature-btn{
+    /* position: absolute;
+    top: 85%; */
+    background: #FF900E;
+    padding: 20px 15px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    border-radius: 5px;
+}
+
+.feature-btn .btn-block-text{
+    display: block;
 }
 
 
@@ -139,6 +193,11 @@ img{
     }
 
     .text-primary{
+        margin-bottom: 10px;
+    }
+
+    .primary-heading{
+        font-size: 35px;
         margin-bottom: 10px;
     }
     /* Header Responsive Style */
@@ -202,6 +261,31 @@ img{
     .quick-list-item > .quick-list-title{
         font-size: 30px;
         margin-bottom: 10px;
+    }
+
+    /* Features Section Responsive Styles */
+    .feature-container{
+        flex-direction:column;
+        gap: 20px;
+        padding: 20px 5px;
+    }
+
+    .features-item{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .services-container .services{
+        padding: 0;
+    }
+
+    .features .feature-btn-relative{
+        text-align: center;
+    }
+    
+    .features .feature-btn{
+        padding: 10px;
+        font-size: 20px;
     }
         
 }
